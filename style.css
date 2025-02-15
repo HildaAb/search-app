@@ -2,10 +2,17 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Poppins", serif;
 }
 
 body {
   position: relative;
+  line-height: 1.6;
+}
+
+.obj-width {
+  max-width: 1200px;
+  margin: auto;
 }
 
 nav {
@@ -45,4 +52,34 @@ nav {
   font-size: 18px;
   cursor: pointer;
   margin-left: 10px;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  margin: 40px 0 60px 0;
+}
+
+.blog-container {
+  padding: 3rem 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.blog-card {
+  width: 280px;
+  border: 1px solid #2d4c50;
+  border-radius: 8px;
+  cursor: pointer;
+  padding: 1rem;
+  margin: 10px;
+}
+
+.blog-card img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
 }
