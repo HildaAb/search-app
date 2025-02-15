@@ -92,6 +92,12 @@ nav {
   margin-bottom: 1rem;
 }
 
+.japan {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+
 @media (max-width: 500px) {
   nav {
     padding: 0 20px;
