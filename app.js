@@ -26,7 +26,7 @@ searchButtonEl.addEventListener("click", async () => {
       const articles = await fetchNewsQuery(query);
       displayBlogs(articles);
     } catch (error) {
-      console.log("Error fetching news by query", error);
+      return "Error fetching news by query", error;
     }
   }
 });
@@ -89,6 +89,6 @@ function displayBlogs(articles) {
     const articles = await fetchRandomNews();
     displayBlogs(articles);
   } catch (error) {
-    console.error("Error fetching random news", error);
+    return "Error fetching random news", error;
   }
 })();
